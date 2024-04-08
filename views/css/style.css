@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+nav{
+    /* width: 100vw; */
+    height: 15vh;
+    background-color: #042047;
+}
+footer{
+    height: 20vh;
+    background-color: #1E1E1E;
+}
+#boxheader{
+    /* width: 100vw; */
+    height: 85vh;
+    background-color: #0C2C56;
+}
+#boxquemsomos{
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: #FBFBFB;
+}
+#boxprojetos{
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: #042047;
+}
+#boxmembros{
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: #FBFBFB;
+}
