@@ -9,7 +9,7 @@ header{
 }
 .navbar{
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
 }
 .nav-item{
@@ -19,10 +19,9 @@ header{
     font-weight: bold;
     font-size: 20px;
 }
-@media screen and (max-width: 768px) {
-    .nav-item {
-        font-size: 16px; /* Reduz o tamanho da fonte para dispositivos de tela menor */
-    }
+a{
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 #home{
     display: flex;
@@ -34,11 +33,9 @@ header{
 .logo img{
     margin-left: 60px;
 }
-a{
-    color: #ffffff;
-}
 h1{
     font-size: 40px;
+    
 }
 .text-home{
     color: #ffffff;
@@ -84,8 +81,17 @@ h1{
     height: 50vh; 
     width: 50vw; 
     margin-left: 70px;
-    border-radius: 10%;
+    border-radius: 3%;
     background: linear-gradient(to top right, #000000, #E3BD5C);
+}
+.img-tela{
+    height: 472px;
+}
+.legenda-tela{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #E3BD5C;
+    font-size: 20px;
+    margin-top: 10px;
 }
 .text-projetos{
     font-size: 17px;
@@ -102,7 +108,7 @@ h1{
     width: 100%;
     height: 700px;
     background-color: #2B2B2B;
-    position: absolute;
+
 }
 #membros h1{
     color: #E3BD5C;
@@ -158,8 +164,6 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: 4;
 }
 
 .cards section.card img {
@@ -172,8 +176,22 @@ h1{
     color: #ffffff;
     margin: 16px 0;
     font-weight: bold;
-    position: relative;
-    z-index: 5;
+}
+footer{
+    width: 100%;
+    height: 282px;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-footer{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 /*
 .card {
