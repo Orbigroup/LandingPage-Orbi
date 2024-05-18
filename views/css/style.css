@@ -35,6 +35,9 @@ a{
     flex-direction: row;
     justify-content: space-around; /* Para todos os elementos utilizarem o mesmo tamanho de espaço disponível */
     margin-top: 17vh;
+    align-items: center;
+    margin-top: 10vh;
+    flex-wrap: wrap;
 }
 .title-home{
     font-size: 10vh;
@@ -44,11 +47,13 @@ a{
     font-size: 3.5vh;
     text-align: center;
     width: 50vw;
+    max-width: 100%;
 }
 #home img{
     height: 50vh;
-    position: relative;
+    max-width: 100%;
 }
+
 /* END INÍCIO */
 
 /* SOBRE */
@@ -124,15 +129,19 @@ a{
 
 /* MEMBROS */
 #membros{
-    height: 100vh;
+    height: 105vh;
     background-color: #2B2B2B;
     position: relative;
+    padding-top: 5vh;
 }
 .text-membros h1{
     color: #E3BD5C;
     font-weight: bold;
     font-size: 5vh;
-    text-align: center;
+    text-align: center; 
+    position: relative;
+    top: 6vh;
+
 }
 #membros-efeitos {
     width: 90vw;
