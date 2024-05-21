@@ -99,23 +99,30 @@ a{
     justify-content: space-around; 
     align-items: center;
     margin-bottom: 10vh;
+    margin-top: 15vh;
 }
 .text-projetos{
     width: 50%;
 }
-.tela{
-    height: 50vh; 
-    border-radius: 10%;
-    background: linear-gradient(to top right, #000000, #E3BD5C);
-}
-.img-tela{
+.logo-sistema{
     height: 50vh;
+    width: 65vh;
+    background: linear-gradient(to top right, #7C0101, #E20202); 
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-sistema{
+    height: 30vh;   
+    padding: 3%;
 }
 .legenda-tela{
     color: #E3BD5C;
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin-top: 3vh;
-    font-weight: 400;
+    font-weight: 500;
+    padding-left: 3%;
 }
 .text-projetos h1{
     color: #E3BD5C; 
@@ -174,7 +181,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 1vh;
 }
 .img-aluno{
     width: 17vw;
@@ -185,7 +192,10 @@ a{
 }
 .nome-aluno{
     color: #ffffff;
-    font-size: 3.7vh;
+    font-size: 2.5vh;
+}
+.contato{
+    width: 3vh;
 }
 /* END MEMBROS */
 
