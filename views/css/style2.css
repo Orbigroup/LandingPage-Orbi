@@ -64,12 +64,33 @@ nav {
     transition: 0.3s;
 
 }
-
 #pattern {
     display: none;
 }
+#conteudo-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 15vh;
+}
+#text-home{
+    color: #F1F1EF;
+    font-size: 1.6vw;
+    text-align: center;
+    max-width: fit-content;
+}
+#title-home{
+    font-weight: 350;
+    font-size: 4vw;
+}
+
 
 @media (max-width: 999px) {
+    #img-home{
+        display: none;
+    }
     #title{
         font-size: unset;
     }

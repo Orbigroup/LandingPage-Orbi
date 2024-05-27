@@ -23,42 +23,57 @@
 </head>
 
 <body>
-    <!--     <div class="container-fluid"> -->
-    <div class="" id="home">
 
+    <div class="container-fluid" id="home">
         <nav>
-            <div id="">
+            <!-- Logo orbi que só aparece na versão mobile, fica no topo junto com o breadcrumb -->
+            <div>
                 <img src="views/imgs/logo.png" class="img-fluid" id="logo-orbi" alt="">
             </div>
 
+            <!-- São as linhazinhas que aparecem no canto do mobile, famoso breadcrum -->
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+
+            <!-- A lista de itens na Nav em si. -->
             <ul class="nav-list">
                 <li><a href="#" id="title">HOME</a></li>
                 <li><a href="#" id="title">QUEM SOMOS</a></li>
                 <li><a href="#" id="title">PROJETOS</a></li>
                 <li><a href="#" id="title">MEMBROS</a></li>
             </ul>
+
         </nav>
-        <div id="pattern">
+
+        <div id="pattern"><!-- Só aparece no mobile, é a 'textura' orbi no fundo -->
             <img src="views/imgs/ESFERACOMPLETA.png" alt="">
         </div>
 
+        <!-- Conteúdo do Home (Logo orbi + Textos) -->
+        <div  id="conteudo-home">
 
-        <!-- <img src="views/imgs/logo.png" class="img-fluid"> -->
+            <!-- O ID "img-home" fica vazio mas é utilizado no @media para tornar a imagem invisivel quando na versão mobile -->
+            <div class="col-4" id="img-home">
+                <img src="views/imgs/logo.png" class="img-fluid">
+            </div>
+
+            <div class="col-9 col-lg-6" id="text-home">
+                <h1 id="title-home">BEM VINDO A ORBI</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt sit, mollitia blanditiis
+                    molestiae voluptatum necessitatibus. Porro officia accusantium eaque voluptatem esse fuga at quasi
+                    expedita quae officiis quo sapiente sit dolorum veritatis, voluptas nulla sunt assumenda magnam
+                    modi. Ut ea eveniet corrupti pariatur, minus neque unde eaque culpa illum!
+                </p>
+            </div>
+
+        </div>
+
+
     </div>
-    <div class="text-home">
-        <h1 class="title-home">BEM VINDOS A ORBI</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt sit, mollitia blanditiis
-            molestiae voluptatum necessitatibus. Porro officia accusantium eaque voluptatem esse fuga at quasi
-            expedita quae officiis quo sapiente sit dolorum veritatis, voluptas nulla sunt assumenda magnam
-            modi. Ut ea eveniet corrupti pariatur, minus neque unde eaque culpa illum!
-        </p>
-    </div>
-    </div>
+
     <script src="js/mobile-navbar.js"></script>
 </body>
 
