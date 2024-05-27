@@ -15,11 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +48,7 @@
         </div>
 
         <!-- Conteúdo do Home (Logo orbi + Textos) -->
-        <div  id="conteudo-home">
+        <div id="conteudo-home">
 
             <!-- O ID "img-home" fica vazio mas é utilizado no @media para tornar a imagem invisivel quando na versão mobile -->
             <div class="col-4" id="img-home">
@@ -70,8 +65,25 @@
             </div>
 
         </div>
+    </div>
+    <div class="container-fluid" id="sobre">
 
+        <div class="container-fluid centro">
+            <h1 id="title-sobre">SOBRE</h1>
+        </div>
 
+        <div id="conteudo-sobre">
+            <div class="col-lg-6 col-12" id="text-body">
+                <h1 id="title-body">QUEM SOMOS</h1>
+                <p>A equipe Orbi é formada por cinco alunos do curso de Desenvolvimento de Software Multiplataforma da
+                    Fatec Registro. Nosso objetivo é criar soluções para desafios enfrentados na área da saúde,
+                    especificamente no combate a doenças epidêmicas transmissíveis e não transmissíveis, como a Covid-
+                    19 e dengue.</p>
+            </div>
+            <div class="col-lg-4 col-12" id="img-grupo">
+                <img src="views/imgs/img_01.jpg" class="img-fluid rounded-5" alt="">
+            </div>
+        </div>
     </div>
 
     <script src="js/mobile-navbar.js"></script>

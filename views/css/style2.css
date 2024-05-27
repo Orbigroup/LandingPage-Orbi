@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body,
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #home {
@@ -85,8 +87,45 @@ nav {
     font-weight: 350;
     font-size: 4vw;
 }
+#text-body{
+    color: #000;
+    font-size: 2vw;
+    text-align: start;
+    font-weight: 500;
+    max-width: fit-content;
+}
+#title-body{
+    font-weight: bolder;
+    font-size: 3vw;
+    color: #E3BD5C;
+}
 
 
+#sobre{
+    height: 93vh;
+    width: 100%;
+    background-color: #F1F1EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#conteudo-sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 15vh;
+}
+#title-sobre{
+    font-size: 3.2vw;
+    font-weight: bold;
+    padding: 30px;
+}
+.centro{
+    width:unset !important;
+}
 @media (max-width: 999px) {
     #img-home{
         display: none;
