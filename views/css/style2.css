@@ -66,10 +66,13 @@ nav {
     transition: 0.3s;
 
 }
+
 #pattern {
     display: none;
+    z-index: 1;
 }
-#conteudo-home{
+
+#conteudo-home {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -77,40 +80,51 @@ nav {
     align-content: center;
     margin-top: 15vh;
 }
-#text-home{
+
+#img-sistema {
+    background: linear-gradient(to top right, #7C0101, #E20202);
+    display: flex;
+    justify-content: center;
+}
+
+#text-home {
     color: #F1F1EF;
     font-size: 1.6vw;
     text-align: center;
     max-width: fit-content;
 }
-#title-home{
+
+#title-home {
     font-weight: 350;
     font-size: 4vw;
 }
-#text-body{
+
+#text-body {
     color: #000;
-    font-size: 2vw;
+    font-size: 1.6rem;
     text-align: start;
     font-weight: 500;
     max-width: fit-content;
 }
-#title-body{
+
+#title-body {
     font-weight: bolder;
-    font-size: 3vw;
+    font-size: 1.6rem;
     color: #E3BD5C;
 }
 
 
-#sobre{
-    height: 93vh;
-    width: 100%;
+#sobre {
     background-color: #F1F1EF;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 2;
+    position: relative;
 
 }
-#conteudo-sobre{
+
+#conteudo-sobre {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -118,28 +132,178 @@ nav {
     align-content: center;
     margin-top: 15vh;
 }
-#title-sobre{
-    font-size: 3.2vw;
+
+#conteudo-sobre-projetos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 15vh;
+}
+
+#title-sobre {
+    font-size: 4vh;
     font-weight: bold;
     padding: 30px;
 }
-.centro{
-    width:unset !important;
+
+#title-membros {
+    font-size: 4vh;
+    font-weight: bold;
+    padding: 30px;
+    color: #E3BD5C;
+}
+
+.centro {
+    width: unset !important;
+}
+
+#membros {
+    background-color: #2B2B2B;
+    position: relative;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+#membros-efeito {
+    width: 90vw;
+    height: 25vh;
+    border-radius: 20%;
+    background-color: #36547C;
+    filter: blur(130px);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+.fundo {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1.3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    align-items: center;
+    width: 17vw;
+}
+
+.nome-aluno {
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+
+.img-membro {
+    height: 23rem;
+    margin: 10px;
+    margin-top: 20px;
+    width: 15vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* IDs para cada card dos membros */
+#giovana {
+    background-image: url(../imgs/membros/img-giovana.jpeg);
+}
+
+#kaique {
+    background-image: url(../imgs/membros/img-kaique.jpeg);
+}
+
+#arthur {
+    background-image: url(../imgs/membros/img-arthur.jpeg);
+}
+#eric {
+    background-image: url(../imgs/membros/img-eric.jpeg);
+}
+
+#miura {
+    background-image: url(../imgs/membros/img-miura.jpeg);
+}
+
+#footer{
+    height: 25vh;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#text-footer{
+    color: #F1F1EF;
+    font-size: 2.5vh;
+}
+.links-contato{
+    width: 50px;
 }
 @media (max-width: 999px) {
-    #img-home{
+    .card{
+        width: 85vw;
+    }
+    .img-membro{
+        width: 65vw;
+
+    }
+    #cards {
+        flex-direction: column;
+    }
+
+    #title-home {
+        font-weight: 600;
+        font-size: 10vw;
+    }
+
+    #text-home {
+        font-size: 4vw;
+    }
+
+    #conteudo-home {
+        flex-direction: column-reverse;
+    }
+
+    #conteudo-sobre {
+        flex-direction: column;
+    }
+
+    #conteudo-sobre-projetos {
+        flex-direction: column;
+    }
+
+    #img-home {
         display: none;
     }
-    #title{
+
+    #title {
         font-size: unset;
     }
+
     nav {
         justify-content: space-around;
     }
 
     #pattern {
-        display: flex;
-        margin-top: 450px;
+        display: block;
+        margin-top: 600px;
+        position: absolute;
+        margin-left: -250px;
     }
 
     #logo-orbi {
@@ -147,6 +311,9 @@ nav {
     }
 
     body {
+        overflow-x: hidden;
+    }
+    *{
         overflow-x: hidden;
     }
 
