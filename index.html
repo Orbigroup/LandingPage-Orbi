@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orbi</title>
+
     <!-- FAVICON -->
     <link rel="icon" href="views/imgs/fav.ico" type="image/x-icon">
-
     <!-- CSS -->
-    <link rel="stylesheet" href="views/css/style.css">
+    <link href="views/css/style.css" rel="stylesheet">
+    <link href="views/css/navbar.css" rel="stylesheet">
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 
 </head>
 
@@ -22,26 +24,55 @@
     <div class="container-fluid" id="home">
         <nav>
             <!-- Logo orbi que só aparece na versão mobile, fica no topo junto com o breadcrumb -->
-            <div>
+            <!--        <div>
                 <img src="views/imgs/logo.png" class="img-fluid" id="logo-orbi" alt="">
-            </div>
+            </div> -->
 
             <!-- São as linhazinhas que aparecem no canto do mobile, famoso breadcrum -->
-            <div class="mobile-menu">
+            <!--    <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </div> -->
 
             <!-- A lista de itens na Nav em si. -->
-            <ul class="nav-list">
+            <!--     <ul class="nav-list">
                 <li><a href="#title-home" id="title">HOME</a></li>
                 <li><a href="#conteudo-sobre" id="title">QUEM SOMOS</a></li>
                 <li><a href="#conteudo-sobre-projetos" id="title">PROJETOS</a></li>
                 <li><a href="#membros" id="title">MEMBROS</a></li>
-            </ul>
+            </ul> -->
 
         </nav>
+        <nav class="navbar navbar-expand-lg fixed-top " aria-label="Main navigation">
+            <div class="container-fluid">
+                <div>
+                    <img src="views/imgs/logo.png" class="img-fluid" id="logo-orbi" alt="">
+                </div>
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">QUEM SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PROJETOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEMBROS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
 
         <!-- Conteúdo do Home (Logo orbi + Textos) -->
         <div id="conteudo-home">
@@ -195,7 +226,7 @@
         <p class="pt-3" id="text-footer">Copyright © 2024</p>
     </div>
 
-    <script src="js/mobile-navbar.js"></script>
+    <script src="js/offcanvas-navbar.js"></script>
 </body>
 
 </html>
