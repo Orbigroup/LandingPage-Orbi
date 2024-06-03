@@ -218,6 +218,7 @@ nav {
     width: 15vw;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 /* IDs para cada card dos membros */
 #giovana {
