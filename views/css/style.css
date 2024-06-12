@@ -146,6 +146,9 @@ nav {
     font-size: 4vh;
     font-weight: bold;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title-membros {
@@ -154,7 +157,10 @@ nav {
     padding: 30px;
     color: #E3BD5C;
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+}
 .centro {
     width: unset !important;
 }
